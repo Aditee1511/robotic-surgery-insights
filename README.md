@@ -65,3 +65,54 @@ robotic-surgery-insights/
 │   └── ollama_client.py     local Ollama connection, if available
 ├── requirements.txt
 └── README.md
+
+## How to Run Locally
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Aditee1511/robotic-surgery-insights.git
+cd robotic-surgery-insights
+```
+
+### 2. Create a virtual environment
+
+```bash
+python3 -m venv venv
+```
+
+### 3. Activate the virtual environment
+
+**macOS / Linux:**
+
+```bash
+source venv/bin/activate
+```
+
+**Windows:**
+
+```bash
+venv\Scripts\activate
+```
+
+### 4. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 5. Start the application
+
+```bash
+streamlit run app/app.py
+```
+
+The application will open in your browser at:
+
+`http://localhost:8501`
+
+### Notes
+
+* The application runs locally using the transcripts provided in the `transcripts/` folder.
+* No external database or cloud deployment is required to run the application.
+* The optional Ollama integration is included in the project for local LLM-based functionality.
